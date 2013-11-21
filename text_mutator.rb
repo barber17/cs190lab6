@@ -15,6 +15,8 @@ def main
   case modification
   when "--reverse"
     mod_text = reverse_mod text
+  when "--swapcase"
+    mod_text = swapcase_mod text
   when "--upper"
     mod_text = upper_mod text
   when "--lower"
@@ -42,5 +44,8 @@ def lower_mod input
   input.downcase
 end
 
+def swapcase_mod input
+  input.swapcase
+end
 # Call main method
 main
